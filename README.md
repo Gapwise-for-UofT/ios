@@ -4,9 +4,9 @@
 
 # Gapwise for iOS
 
-### The native iOS client for Gapwise for UTM.
+### The native iOS client for Gapwise for UofT.
 
-**A privacy-first Swift + SwiftUI app for UTM timetables and campus context, designed around fast local interaction and canonical Gapwise data boundaries.**
+**A privacy-first Swift + SwiftUI app for University of Toronto timetables and campus context, designed around fast local interaction and canonical Gapwise data boundaries.**
 
 [![iOS](https://img.shields.io/badge/iOS-Native-000000?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/Swift-Native-F05138?style=for-the-badge&logo=swift&logoColor=white)](https://www.swift.org/)
@@ -17,7 +17,7 @@
 
 <br />
 
-**[Gapwise](https://gapwise.ca)** · **[Android](https://github.com/Gapwise-for-UTM/android)** · **[iOS](https://github.com/Gapwise-for-UTM/ios)** · **[AI](https://ai.gapwise.ca)** · **[Data](https://data.gapwise.ca)** · **[Docs](https://docs.gapwise.ca)** · **[Status](https://status.gapwise.ca)**
+**[Gapwise](https://gapwise.ca)** · **[Android](https://github.com/Gapwise-for-UofT/android)** · **[iOS](https://github.com/Gapwise-for-UofT/ios)** · **[AI](https://ai.gapwise.ca)** · **[Data](https://data.gapwise.ca)** · **[Docs](https://docs.gapwise.ca)** · **[Status](https://status.gapwise.ca)**
 
 </div>
 
@@ -25,7 +25,7 @@
 
 ## What Gapwise for iOS is
 
-Gapwise for iOS is the native iPhone client for **Gapwise for UTM**, a privacy-first timetable, gap-planning, and campus-intelligence project for University of Toronto Mississauga students.
+Gapwise for iOS is the native iPhone client for **Gapwise for UofT**, a privacy-first timetable, gap-planning, and campus-intelligence project for University of Toronto students.
 
 The current product scope is **UTM only**. The native client should preserve uncertain or unsupported source information when necessary, but it does not promise a UTSG, UTSC, or mixed-campus product experience. Campus facts, entrances, accessibility evidence, and geometry remain owned by the canonical Gapwise Data boundary rather than by hand-maintained iOS constants.
 
@@ -120,7 +120,7 @@ The current timetable store uses local application storage behind an explicit re
 The app targets iPhone on iOS 17 or later and uses an Xcode project with no third-party runtime dependency requirement in the current foundation.
 
 ```bash
-git clone https://github.com/Gapwise-for-UTM/ios.git
+git clone https://github.com/Gapwise-for-UofT/ios.git
 cd ios
 ```
 
@@ -141,13 +141,13 @@ Linux cannot validate SwiftUI, the system document picker, Apple security-scoped
 
 | Repository | Role | Primary surface |
 | --- | --- | --- |
-| **[`gapwise`](https://github.com/Gapwise-for-UTM/gapwise)** | Core web/PWA, canonical timetable/gap/routing semantics, public API, OpenAPI, and SDK source | [gapwise.ca](https://gapwise.ca) / [api.gapwise.ca](https://api.gapwise.ca/v1) |
-| **[`android`](https://github.com/Gapwise-for-UTM/android)** | Native Kotlin + Jetpack Compose Android client | Android app |
-| **[`ios`](https://github.com/Gapwise-for-UTM/ios)** | Native Swift + SwiftUI iOS client | iOS app |
-| **[`ai`](https://github.com/Gapwise-for-UTM/ai)** | OAuth/MCP layer for explicitly delegated student context and bounded actions | [ai.gapwise.ca](https://ai.gapwise.ca) |
-| **[`data`](https://github.com/Gapwise-for-UTM/data)** | Canonical public UTM campus data, provenance, schemas, validation, and distribution | [data.gapwise.ca](https://data.gapwise.ca) |
-| **[`docs`](https://github.com/Gapwise-for-UTM/docs)** | Canonical public developer documentation | [docs.gapwise.ca](https://docs.gapwise.ca) |
-| **[`status`](https://github.com/Gapwise-for-UTM/status)** | Independent service-health monitoring and incident communication | [status.gapwise.ca](https://status.gapwise.ca) |
+| **[`gapwise`](https://github.com/Gapwise-for-UofT/gapwise)** | Core web/PWA, canonical timetable/gap/routing semantics, public API, OpenAPI, and SDK source | [gapwise.ca](https://gapwise.ca) / [api.gapwise.ca](https://api.gapwise.ca/v1) |
+| **[`android`](https://github.com/Gapwise-for-UofT/android)** | Native Kotlin + Jetpack Compose Android client | Android app |
+| **[`ios`](https://github.com/Gapwise-for-UofT/ios)** | Native Swift + SwiftUI iOS client | iOS app |
+| **[`ai`](https://github.com/Gapwise-for-UofT/ai)** | OAuth/MCP layer for explicitly delegated student context and bounded actions | [ai.gapwise.ca](https://ai.gapwise.ca) |
+| **[`data`](https://github.com/Gapwise-for-UofT/data)** | Canonical public University of Toronto campus data, provenance, schemas, validation, and distribution | [data.gapwise.ca](https://data.gapwise.ca) |
+| **[`docs`](https://github.com/Gapwise-for-UofT/docs)** | Canonical public developer documentation | [docs.gapwise.ca](https://docs.gapwise.ca) |
+| **[`status`](https://github.com/Gapwise-for-UofT/status)** | Independent service-health monitoring and incident communication | [status.gapwise.ca](https://status.gapwise.ca) |
 
 The repositories are separate implementation and trust boundaries, but they form one product. Native clients should consume canonical Gapwise behavior rather than silently becoming independent timetable, routing, or campus-data engines.
 
