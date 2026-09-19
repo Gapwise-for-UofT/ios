@@ -2,7 +2,7 @@ import Foundation
 
 enum UniversityBuildingCatalog {
     // Recognition-only snapshot of Gapwise Data. No geometry, entrance, floor or access claims.
-    // https://github.com/Gapwise-for-UTM/data/blob/4325a2fa05e54c5ae69355c5fca2d2312485850c/data/utm/building-registry.ts
+    // https://github.com/Gapwise-for-UofT/data/blob/4325a2fa05e54c5ae69355c5fca2d2312485850c/data/utm/building-registry.ts
     // Public code aliases come from normalizePublicBuildingCode, not officialCodes evidence.
     static let utmBuildingNames: [String: String] = [
         "MN": "Maanjiwe nendamowinan",
