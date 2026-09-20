@@ -8,7 +8,7 @@ enum Campus: String, CaseIterable, Codable, Hashable, Identifiable, Sendable {
 
     var id: Self { self }
 
-    // Legacy campus cases remain decodable, but the native product currently supports UTM only.
+    // The domain keeps every U of T campus explicit; this early client currently accepts UTM imports.
     static let selectableCases: [Self] = [.utm]
     static let editableCases: [Self] = [.utm, .unknown]
 

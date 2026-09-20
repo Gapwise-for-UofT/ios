@@ -56,7 +56,7 @@ struct SettingsView: View {
             }
 
             Section("Campus") {
-                LabeledContent("Supported campus", value: "UTM")
+                LabeledContent("Current timetable coverage", value: "UTM")
                 Text("Class times are shown in Toronto time.")
                     .foregroundStyle(.secondary)
             }

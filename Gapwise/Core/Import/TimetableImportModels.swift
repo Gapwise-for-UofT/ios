@@ -96,7 +96,7 @@ enum SkippedEventReason: Error, Hashable, Sendable {
         switch self {
         case .allDayEvent: "All-day events are not timetable meetings."
         case .conflictingUID: "Conflicting events share a UID; the whole series needs review."
-        case .unsupportedCampus: "This event is outside UTM, the campus currently supported by Gapwise."
+        case .unsupportedCampus: "This iOS version can currently import UTM timetable events only."
         case .unsupportedTimeZoneRecurrence:
             "Repeating events must use Toronto or floating local time to preserve their time across daylight saving changes."
         case .cancelled: "A cancelled event was ignored."

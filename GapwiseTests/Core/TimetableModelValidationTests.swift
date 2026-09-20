@@ -110,6 +110,7 @@ final class TimetableModelValidationTests: XCTestCase {
     func testOnlyUTMIsSelectableWhileLegacyCampusesRemainDecodable() throws {
         XCTAssertEqual(Campus.selectableCases, [.utm])
         XCTAssertEqual(Campus.editableCases, [.utm, .unknown])
+        XCTAssertEqual(UserPreferences.defaults.campusContext, .unknown)
         XCTAssertEqual(try JSONDecoder().decode(Campus.self, from: Data("\"utsg\"".utf8)), .utsg)
     }
 }

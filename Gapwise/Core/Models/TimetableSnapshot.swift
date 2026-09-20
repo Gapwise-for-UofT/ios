@@ -146,5 +146,5 @@ struct UserPreferences: Codable, Equatable, Sendable {
     var appearance: AppearancePreference
     var campusContext: Campus
 
-    static let defaults = UserPreferences(appearance: .system, campusContext: .utm)
+    static let defaults = UserPreferences(appearance: .system, campusContext: .unknown)
 }

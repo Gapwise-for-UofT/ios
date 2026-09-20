@@ -326,8 +326,8 @@ private enum CalendarImportSourceIdentifier {
             .filter { !$0.isEmpty }
             .joined(separator: "|")
         // File-provider renames (e.g. "timetable (2).ics") must not create a new source.
-        // Metadata-less files share the local UTM import slot; filenames are presentation only.
-        return "ics-\(fnv1a64(source.isEmpty ? "utm-calendar" : source))"
+        // Metadata-less files share one neutral local import slot; filenames are presentation only.
+        return "ics-\(fnv1a64(source.isEmpty ? "calendar" : source))"
     }
 
     private static func fnv1a64(_ value: String) -> String {

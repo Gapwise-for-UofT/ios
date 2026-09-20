@@ -8,7 +8,7 @@ struct CampusMapView: View {
             switch appModel.campusIntegration {
             case .notIntegrated:
                 ContentUnavailableView {
-                    Label("UTM Map Unavailable", systemImage: "map")
+                    Label("Campus Map Unavailable", systemImage: "map")
                 } description: {
                     Text("Campus maps and walking directions are not available in this version. Imported classroom locations are shown in Timetable.")
                 } actions: {
