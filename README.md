@@ -6,7 +6,7 @@
 
 ### The native iOS client for Gapwise.
 
-**A privacy-first Swift + SwiftUI app for University of Toronto timetables and campus context, designed around fast local interaction and canonical Gapwise data boundaries.**
+**A privacy-first Swift + SwiftUI app for Gapwise, currently focused on University of Toronto timetables and campus context, designed around fast local interaction and canonical Gapwise data boundaries.**
 
 [![iOS](https://img.shields.io/badge/iOS-Native-000000?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/ios/)
 [![Swift](https://img.shields.io/badge/Swift-Native-F05138?style=for-the-badge&logo=swift&logoColor=white)](https://www.swift.org/)
@@ -25,9 +25,9 @@
 
 ## What Gapwise for iOS is
 
-Gapwise for iOS is the native iPhone client for **Gapwise**, a privacy-first timetable, gap-planning, and campus-intelligence project for University of Toronto students.
+Gapwise for iOS is the native iPhone client for **[Gapwise](https://gapwise.ca)**, a free and open-source multi-university timetable and campus-intelligence platform.
 
-The current iOS implementation can import UTM timetable events and preserve unresolved campus information; it does not yet provide a UTSG, UTSC, or mixed-campus native experience. That is a client implementation limit, not the identity of Gapwise. Campus facts, entrances, accessibility evidence, and geometry remain owned by the canonical Gapwise Data boundary rather than by hand-maintained iOS constants.
+While the Gapwise web platform supports 7 universities across Canada (U of T, Carleton, TMU, Queen's, Laurier, York, and McMaster), the current native iOS client foundation focuses on the **University of Toronto** (with UTM timetable events and campus coordinate boundaries), with broader multi-university native client expansion planned.
 
 The goal is a real native iOS application rather than a WebView wrapper: navigation, storage, rendering, accessibility, interactions, and platform integration are designed for iPhone while staying aligned with the wider Gapwise repository ecosystem.
 
